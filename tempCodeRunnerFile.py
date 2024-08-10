@@ -1,10 +1,3 @@
-# Programmer: Kristina Mueller
-# Course: CS701/GB-731, Dr. Yalew
-# Date: [Submission date]
-# Programming Assignment: 3
-# Program Inputs: A string containing answer
-# Program Outputs: Very good(If 100% correct) or Missed number and Score Presentage
-
 def main():
     # Define a string containing the correct answers.
     CORRECT_ANSWERS = "adbdcacbdac"
@@ -21,7 +14,6 @@ if not valid_input:
     print("Incorrect number of answers entered!")
 
 # Compare user's answers to answer key 
-CORRECT_ANSWERS = "adbdcacbdac"
 correct_count = 0
 test_result = ""
 
@@ -37,14 +29,13 @@ print("Correct answer: ", CORRECT_ANSWERS)
 print("Your answer: ", str(test_result)) 
 
 # Calculate and display score as a percentage 
-score = round(correct_count * 9.09)
+score = correct_count * 10
 # Feedback for 100% scores
 if score == 100:
     print("Very good!")
-    print("Your score: ", score, "%") 
 else:
     print("Number of correct answers: ", correct_count)
-    print("Your score: ", score, "%")
+    print("Your score: ", score)
 
 
 if __name__ == "__main__":
